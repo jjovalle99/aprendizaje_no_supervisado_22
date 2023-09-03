@@ -2,7 +2,7 @@
 
 ## Descripción del Proyecto
 
-Este proyecto se centra en aplicar algoritmos de aprendizaje no supervisado a un conjunto de datos de reviews de productos en Amazon para extraer insights de negocio. El dataset fue adquirido durante un evento organizado por la empresa Factored, denominado Datathon. La información relacionada con este evento se encuentra en la carpeta `datathon` de este repositorio. Es importante destacar que todo el contenido dentro de la carpeta `datathon` no forma parte del desarrollo de este proyecto, sino que son presentaciones y códigos externos.
+Este proyecto se centra en aplicar algoritmos de aprendizaje no supervisado a un conjunto de datos de reviews de productos en Amazon para extraer insights de negocio. El dataset fue adquirido durante un evento organizado por la empresa Factored, denominado Datathon. La información relacionada con este evento se encuentra en la carpeta `datathon` de este repositorio. Es importante destacar que todo el contenido dentro de la carpeta `datathon` no forma parte del desarrollo de este proyecto, sino que son presentaciones y el codigo utilizado para subir los datos a HuggingFace. Todo el codigo e informacion adicional presente en este repositorio, si representan el desarrollo del proyecto de clase.
 
 ## Preparación de Datos
 
