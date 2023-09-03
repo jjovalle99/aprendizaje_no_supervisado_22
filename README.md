@@ -9,7 +9,12 @@ Este proyecto se centra en aplicar algoritmos de aprendizaje no supervisado a un
 Debido al gran volumen de datos, estos se cargaron en Google Cloud Storage (GCS) y posteriormente se hicieron accesibles a través de una tabla en BigQuery. Gracias al bono de 300 USD que Google ofrece a los nuevos usuarios, no se incurrió en costos por el uso de servicios en la nube.
 
 - El notebook para cargar los datos a GCS está disponible en `proyecto/upload_dataset_to_gcs.ipynb`.
-- Una vez que los datos están en GCS, se pueden utilizar para crear una tabla en BigQuery, tal como se muestra en la documentación.
+- Una vez que los datos están en GCS, se pueden utilizar para crear una tabla en BigQuery, tal como se muestra a continuación:
+![image](https://github.com/jjovalle99/aprendizaje_no_supervisado_22/assets/70274018/b52b5b48-f9c7-4b64-a74a-f34a37edf0a8)
+![image](https://github.com/jjovalle99/aprendizaje_no_supervisado_22/assets/70274018/d99922a6-a0ac-42c5-a1dd-3246369ce3dd)
+
+
+
   
 ### Creación de la Tabla Principal en BigQuery
 
@@ -40,4 +45,4 @@ Para esta primera entrega, el análisis se centrará exclusivamente en la catego
 - Aplicar una técnica de reducción de dimensionalidad a los embeddings.
 - Ejecutar el algoritmo de clustering.
   
-Los detalles de este procedimiento se encuentran en el notebook `proyecto/proyecto_entrega_1.ipynb`.
+Los detalles de este procedimiento se encuentran en el notebook `proyecto/proyecto_entrega_1.ipynb`. Es importante aclarar que, dada la gran cantidad de datos disponibles, haremos uso de GPU (tambien gratis en Google Colab) para todos los procesos en donde sea posible utilizar este hardware. Esto implica que se hara uso de librerias como cuML (en reemplazo de Scikit-Learn) y PyTorch.
