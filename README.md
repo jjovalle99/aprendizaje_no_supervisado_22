@@ -10,10 +10,15 @@ Debido al gran volumen de datos, estos se cargaron en Google Cloud Storage (GCS)
 
 - El notebook para cargar los datos a GCS está disponible en `proyecto/upload_dataset_to_gcs.ipynb`.
 - Una vez que los datos están en GCS, se pueden utilizar para crear una tabla en BigQuery, tal como se muestra a continuación:
-![image](https://github.com/jjovalle99/aprendizaje_no_supervisado_22/assets/70274018/b52b5b48-f9c7-4b64-a74a-f34a37edf0a8)
-![image](https://github.com/jjovalle99/aprendizaje_no_supervisado_22/assets/70274018/d99922a6-a0ac-42c5-a1dd-3246369ce3dd)
-
-
+<p align="center">
+  <img src="https://github.com/jjovalle99/aprendizaje_no_supervisado_22/assets/70274018/b52b5b48-f9c7-4b64-a74a-f34a37edf0a8">
+</p>
+<p align="center">
+  <img src="https://github.com/jjovalle99/aprendizaje_no_supervisado_22/assets/70274018/d99922a6-a0ac-42c5-a1dd-3246369ce3dd">
+</p>
+<p align="center">
+    <img src="https://github.com/jjovalle99/aprendizaje_no_supervisado_22/assets/70274018/51f2c75f-5350-443a-be35-ca807017e4a7">
+</p>
 
   
 ### Creación de la Tabla Principal en BigQuery
