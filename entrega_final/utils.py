@@ -35,6 +35,37 @@ def generar_clusters(
     return clusters
 
 
+def keywords_keybert(
+    modelo,
+    data: pd.DataFrame,
+    unique_clusters: list,
+    keybert_args: dict,
+    verbose: bool = True
+) -> pd.DataFrame:
+
+    if verbose:
+        print(f"Obteniendo keywords...")
+
+    top_words_per_cluster = {}
+
+    for cluster in tqdm(unique_clusters, total=len(unique_clusters)):
+        cluster_data = ". ".join(data[data.cluster == cluster]["review"])
+        top_words = modelo.extract_keywords(
+            cluster_data,
+            **keybert_args
+        )
+        top_words = [kw[0] for kw in top_words]
+        top_words_per_cluster[cluster] = top_words
+
+    if verbose:
+        print(f"Keywords generados...")
+
+    return pd.DataFrame(
+        list(top_words_per_cluster.items()),
+        columns=["cluster", "keywords"]
+    )
+
+
 def palabras_importantes_por_cluster(
     data: pd.DataFrame,
     cluster_num: int,
