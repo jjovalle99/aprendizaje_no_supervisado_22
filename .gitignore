@@ -1,3 +1,4 @@
 *.parquet
 *.json
 *__pycache__
+*.cupy
