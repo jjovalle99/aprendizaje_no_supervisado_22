@@ -51,3 +51,10 @@ Para esta primera entrega, el análisis se centrará exclusivamente en la catego
 - Ejecutar el algoritmo de clustering.
   
 Los detalles de este procedimiento se encuentran en el notebook `proyecto/proyecto_entrega_1.ipynb`. Es importante aclarar que, dada la gran cantidad de datos disponibles, haremos uso de GPU (tambien gratis en Google Colab) para todos los procesos en donde sea posible utilizar este hardware. Esto implica que se hara uso de librerias como cuML (en reemplazo de Scikit-Learn) y PyTorch.
+
+# Entrega final
+Los resultados de la entrega final pueden ser encontrados en la carpeta `entrega_final`:
+- `01_proyecto_final_embeddings_y_analisis_de_sentimiento.ipynb`: Contiene el procedimiento utilizado para realizar el analisis de sentimiento y la obtencion de los embeddings.
+- `02_proyecto_final_clusters_y_topicos.ipynb`: Contiene el procedimiento utilizado para hallar los insights de las reseñas (reduccion de dimensionalidad, clusters, obtencion de keywors y generación de topicos)
+- `utils.py`: Contiene funciones auxiliares para facilitar el desarrollo de los notebooks principales.
+- `requirements.txt`: Contiene las liberias utilizadas en el proyecto.
