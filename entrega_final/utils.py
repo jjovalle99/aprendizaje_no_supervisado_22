@@ -8,24 +8,30 @@ from tqdm import tqdm
 
 def reducir_dimensiones(
     embeddings: np.ndarray,
-    umap_kwargs: dict
+    umap_kwargs: dict,
+    verbose: bool = True
 ) -> pd.DataFrame:
 
     dim_model = UMAP(**umap_kwargs)
-    print("Reduciendo la dimension de los embeddings...")
+    if verbose:
+        print("Reduciendo la dimension de los embeddings...")
     reduced_embeddings = dim_model.fit_transform(embeddings)
-    print("Dimension de embeddings reducida!")
+    if verbose:
+        print("Dimension de embeddings reducida!")
     return reduced_embeddings
 
 
 def generar_clusters(
     embeddings: np.ndarray,
-    hdbscan_kwargs: dict
+    hdbscan_kwargs: dict,
+    verbose: bool = True
 ):
     cluster_model = HDBSCAN(**hdbscan_kwargs)
-    print("Generando clusters...")
+    if verbose:
+        print("Generando clusters...")
     clusters = cluster_model.fit_predict(embeddings)
-    print("Clusters generados!")
+    if verbose:
+        print("Clusters generados!")
     return clusters
 
 
@@ -54,9 +60,11 @@ def palabras_importantes_general(
     data: pd.DataFrame,
     unique_clusters: list,
     n_words: int,
-    tfidf_kwargs: dict
+    tfidf_kwargs: dict,
+    verbose: bool = True
 ) -> pd.DataFrame:
-    print(f"Obteniendo el top {n_words} de palabras...")
+    if verbose:
+        print(f"Obteniendo el top {n_words} de palabras...")
 
     top_words_per_cluster = {}
 
@@ -64,7 +72,8 @@ def palabras_importantes_general(
         top_words = palabras_importantes_por_cluster(data=data, cluster_num=cluster, n_words=n_words, tfidf_kwargs=tfidf_kwargs)
         top_words_per_cluster[cluster] = top_words
 
-    print(f"Top {n_words} de palabras obtenido...")
+    if verbose:
+        print(f"Top {n_words} de palabras obtenido...")
 
     return pd.DataFrame(
         list(top_words_per_cluster.items()),
