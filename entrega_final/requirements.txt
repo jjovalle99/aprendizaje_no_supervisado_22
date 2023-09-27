@@ -1,0 +1,13 @@
+--extra-index-url=https://pypi.nvidia.com
+google-cloud-bigquery[bqstorage, pandas]
+numpy
+unidecode
+matplotlib
+seaborn
+plotly
+transformers
+accelerate
+sentence-transformers
+datasets
+emoji
+cuml-cu11
