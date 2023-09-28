@@ -1,5 +1,12 @@
 # Insights de Reviews en Amazon
 
+## Entrega final
+Los resultados de la entrega final pueden ser encontrados en la carpeta `entrega_final`:
+- `01_proyecto_final_embeddings_y_analisis_de_sentimiento.ipynb`: Contiene el procedimiento utilizado para realizar el analisis de sentimiento y la obtencion de los embeddings.
+- `02_proyecto_final_clusters_y_topicos.ipynb`: Contiene el procedimiento utilizado para hallar los insights de las reseñas (reduccion de dimensionalidad, clusters, obtencion de keywords)
+- `utils.py`: Contiene funciones auxiliares para facilitar el desarrollo de los notebooks principales.
+- `requirements.txt`: Contiene las liberias utilizadas en el proyecto.
+
 ## Descripción del Proyecto
 
 Este proyecto se centra en aplicar algoritmos de aprendizaje no supervisado a un conjunto de datos de reviews de productos en Amazon para extraer insights de negocio. El dataset fue adquirido durante un evento organizado por la empresa Factored, denominado Datathon. La información relacionada con este evento se encuentra en la carpeta `datathon` de este repositorio. Es importante destacar que todo el contenido dentro de la carpeta `datathon` no forma parte del desarrollo de este proyecto, sino que son presentaciones y el codigo utilizado para subir los datos a HuggingFace. Todo el codigo e informacion adicional presente en este repositorio, si representan el desarrollo del proyecto de clase.
@@ -51,10 +58,3 @@ Para esta primera entrega, el análisis se centrará exclusivamente en la catego
 - Ejecutar el algoritmo de clustering.
   
 Los detalles de este procedimiento se encuentran en el notebook `proyecto/proyecto_entrega_1.ipynb`. Es importante aclarar que, dada la gran cantidad de datos disponibles, haremos uso de GPU (tambien gratis en Google Colab) para todos los procesos en donde sea posible utilizar este hardware. Esto implica que se hara uso de librerias como cuML (en reemplazo de Scikit-Learn) y PyTorch.
-
-# Entrega final
-Los resultados de la entrega final pueden ser encontrados en la carpeta `entrega_final`:
-- `01_proyecto_final_embeddings_y_analisis_de_sentimiento.ipynb`: Contiene el procedimiento utilizado para realizar el analisis de sentimiento y la obtencion de los embeddings.
-- `02_proyecto_final_clusters_y_topicos.ipynb`: Contiene el procedimiento utilizado para hallar los insights de las reseñas (reduccion de dimensionalidad, clusters, obtencion de keywords)
-- `utils.py`: Contiene funciones auxiliares para facilitar el desarrollo de los notebooks principales.
-- `requirements.txt`: Contiene las liberias utilizadas en el proyecto.
